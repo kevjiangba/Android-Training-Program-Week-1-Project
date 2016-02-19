@@ -70,32 +70,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //this intent commented out to show what it usually looks like
-                Intent i = new Intent(getApplicationContext(), SecondActivity.class);
+                //Intent i = new Intent(getApplicationContext(), SecondActivity.class);
                 //startActivity(intent);
 
-                //wtf is this intent doing
 
-                //Intent i = new Intent(
-                //        Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                Intent i = new Intent(
+                        Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
-                //wtf am i doing below
-                /*
+
                 image1.buildDrawingCache();
                 Bitmap image = image1.getDrawingCache();
 
                 Bundle extras = new Bundle();
                 extras.putParcelable("imagebitmap", image);
                 i.putExtras(extras);
-                */
+
                 //
 
 
 
                 //Intent i = new Intent(Intent.ACTION_GET_CONTENT);
                 //i.setType("image/*");
-                i.putExtra("picture",);
-                //startActivityForResult(i, SELECT_IMAGE);
-                startActivity(i);
+                //i.putExtra("picture",);
+                startActivityForResult(i, SELECT_IMAGE);
+                //startActivity(i);
 
 
 
